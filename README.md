@@ -6,7 +6,7 @@
 
 ## 開発の経緯
 
-[MTQの質問](communities.movabletype.jp/2015/10/mtentries-limit.html)がきっかけで（※）、カスタムフィールドについて調査・実験した結果をプラグイン化したものです。調査・実験に使用したコードは[GistのMTカスタムフィールドの研究](https://gist.github.com/hideki-a/96a12cdb7a1be98ce060)に掲載しています。
+[MTQの質問](http://communities.movabletype.jp/2015/10/mtentries-limit.html)がきっかけで（※）、カスタムフィールドについて調査・実験した結果をプラグイン化したものです。調査・実験に使用したコードは[GistのMTカスタムフィールドの研究](https://gist.github.com/hideki-a/96a12cdb7a1be98ce060)に掲載しています。
 
 プラグイン化にあたっては、昨日（2015年11月23日）に見つけた「[細かすぎて伝わらない FieldIsNotEmpty プラグインの実装](http://www.powercms.jp/blog/2015/02/super_handler.html)」を参考にさせて頂きました。
 
