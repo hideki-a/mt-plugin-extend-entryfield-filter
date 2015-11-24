@@ -1,7 +1,7 @@
 package ExtendEntryFieldFilter::Tags;
 use strict;
 
-sub _hdlr_extend_field_filter {
+sub _hdlr_extend_entry_field_filter {
     my ($ctx, $args, $cond) = @_;
 
     foreach my $arg (keys %$args) {
