@@ -10,14 +10,14 @@ sub _hdlr_extend_entry_field_filter {
                 # LIKE検索
                 if ($args->{$arg}->[0] eq 'LIKE') {
                     $args->{$arg} = ({ 'like' => $args->{$arg}->[1] });
-                }
-
-                # 数値型の検索
-                if ($args->{$arg}->[0] eq '=') {
-                    # "=","[value]"と記述する必要はないが、エラー回避のため。
-                    $args->{$arg} = $args->{$arg}->[1];
-                } elsif ($args->{$arg}->[0] =~ m/^(>|<|=)+$/) {
-                    $args->{$arg} = { $args->{$arg}->[0] => $args->{$arg}->[1] };
+                } else {
+                    # 数値型の検索
+                    if ($args->{$arg}->[0] eq '=') {
+                        # "=","[value]"と記述する必要はないが、エラー回避のため。
+                        $args->{$arg} = $args->{$arg}->[1];
+                    } elsif ($args->{$arg}->[0] =~ m/^(>|<|=)+$/) {
+                        $args->{$arg} = { $args->{$arg}->[0] => $args->{$arg}->[1] };
+                    }
                 }
             }
         }
