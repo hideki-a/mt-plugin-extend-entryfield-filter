@@ -19,6 +19,8 @@ sub _hdlr_extend_entry_field_filter {
                 } elsif ($args->{$arg}->[0] =~ m/^(>|<|=)+$/) {
                     $args->{$arg} = { $args->{$arg}->[0] => $args->{$arg}->[1] };
                 }
+            } elsif ($args->{$arg} eq 'IS NOT EMPTY') {
+                $args->{$arg} = ({ 'not' => '' });
             }
         }
     }
